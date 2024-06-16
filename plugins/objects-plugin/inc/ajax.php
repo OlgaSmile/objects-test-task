@@ -96,17 +96,7 @@ if (!function_exists('ajax_get_objects')) {
     wp_send_json(array(
         'html' => $html,
         'totalPages' => $total_pages,
-        'cat' => $cat,
-        'title' => $input_data['title'],
-        'address' => $input_data['address'],
-        'floor' => $input_data['floor'],
-        'type' => $input_data['type'],
-        'ecology' => $input_data['ecology'],
-        'roomsAmount' => $input_data['roomsAmount'],
-        'balcony' => $input_data['balcony'],
-        'bathroom' => $input_data['bathroom']
     ));
-
-    wp_die();
+    
   }
 }

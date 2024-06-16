@@ -65,16 +65,6 @@ jQuery(document).ready(function ($) {
             beforeSend: showLoader,
             success: function (response) {
                 hideLoader();
-                filterValues.cat = response.cat;
-                filterValues.title = response.title;
-                filterValues.address = response.address;
-                filterValues.floor = response.floor;
-                filterValues.type = response.type;
-                filterValues.ecology = response.ecology;
-                filterValues.square = response.square;
-                filterValues.roomsAmount = response.roomsAmount;
-                filterValues.balcony = response.balcony;
-                filterValues.bathroom = response.bathroom;
                 totalPages = response.totalPages;
                 totalPageEl.html(totalPages);
                 $("#objects__container").html(response.html);

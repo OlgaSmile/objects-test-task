@@ -1,4 +1,5 @@
 <div class="objects__block hidden">
+
   <div id="objects__container"></div>
 
   <div class="pagination" id="pagination">

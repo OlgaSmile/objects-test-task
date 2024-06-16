@@ -39,7 +39,9 @@ get_header();
 <section class="section">
   <div class="inner-container">
 
-    <?php echo do_shortcode( '[shortcode_filter_func]' ) ?>
+    <?php if(shortcode_exists('shortcode_filter_func')){
+        echo do_shortcode( '[shortcode_filter_func]' );
+    } ?>
 
   </div>
 </section>
