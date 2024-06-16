@@ -1,0 +1,16 @@
+.single__post {
+  display: grid;
+  grid-template-columns: 70% auto;
+  column-gap: 30px;
+  @media screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .single__post-time {
+    margin-bottom: 30px;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 16px;
+    }
+  }
+}

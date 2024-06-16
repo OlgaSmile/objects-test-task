@@ -1,0 +1,39 @@
+.building {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @media screen and (max-width: 576px) {
+    gap: 16px;
+  }
+  .building__title {
+    margin: 0;
+  }
+  .building__general {
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 40px;
+    padding: 16px 0;
+    @media screen and (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    & .building__general-image {
+      aspect-ratio: 1;
+      max-height: 200px;
+      & img {
+        object-fit: contain;
+        max-height: 100%;
+      }
+    }
+  }
+  .building__details {
+    display: flex;
+    gap: 8px;
+    font-weight: 600;
+    & p {
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  margin: 100px auto;
+  @media screen and (max-width: 576px) {
+    margin: 40px auto;
+  }
+}
+
+.inner-container {
+  padding: 0 16px;
+}
+
+.page-title {
+  margin-bottom: 36px;
+  @media screen and (max-width: 576px) {
+    margin-bottom: 16px;
+  }
+}
+
+.navbar-brand.custom-logo-link img {
+  width: 36px;
+}

@@ -1,0 +1,104 @@
+.filter {
+  margin-bottom: 40px;
+  @media screen and (max-width: 576px) {
+      margin-bottom: 20px;
+    }
+  & .filter_select_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
+  }
+  &.loading-overlay {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+        box-shadow: 0px 4px 122px 40px rgba(255, 255, 255, 0.8);
+        z-index: 999;
+      }
+    }
+  & select {
+    cursor: pointer;
+  }
+  & select option:checked {
+    background-color: rgba(85, 51, 255, 0.714);
+    color: white;
+  }
+  & select option:hover {
+      background-color: #53f;
+      color: white;
+  }
+  & .filter_btn {
+    display: block;
+    width: 33%;
+    margin: 0 auto;
+    @media screen and (max-width: 992px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+}
+
+.objects__block {
+  &.hidden {
+    display: none;
+  }
+  & .object__link {
+    display: grid;
+    grid-template-columns: 240px auto 180px;
+    column-gap: 16px;
+    color: black;
+    padding: 16px;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &:hover, &:focus {
+      text-decoration: none;
+      color: black;
+      box-shadow: 0px 0px 16px -8px #000000;
+    }
+    & .building__general-image {
+      aspect-ratio: 1;
+      overflow: hidden;
+    }
+    & img {
+      object-fit: cover;
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+  & .pagination {
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+    & .prev, & .next {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+
+
