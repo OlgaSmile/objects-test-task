@@ -21,10 +21,11 @@
     }
     & .building__general-image {
       aspect-ratio: 1;
-      max-height: 200px;
+      height: 200px;
       & img {
         object-fit: contain;
         max-height: 100%;
+        height: initial;
       }
     }
   }
